@@ -20,6 +20,7 @@ autoload.php (in the $loader->registerNamespaces array)
     );
 
 AppKernel.php (in the registerBundles() function)
+
     public function registerBundles() {
         $bundles = array(
         ...,
@@ -50,4 +51,4 @@ AppKernel.php (in the registerBundles() function)
 
 - Change the prefix used for newly added messages with the `--prefix` option:
 
-    `trans:update --output-format="xliff" --force --prefix='myprefix' en MyBundle`
+    `trans:update --output-format="xliff" --force --prefix='myprefix' en DrEvil\LaserBundle`
