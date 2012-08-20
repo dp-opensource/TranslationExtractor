@@ -1,6 +1,37 @@
 transbundle
 ===========
 
+Installation:
+
+* A github SSH Key must be installed
+
+deps
+
+    [TranslationExtractor]
+    git=git@github.com:digitalpioneers/TranslationExtractor.git
+    target=vendors/TransBundle
+
+autoload.php (in the $loader->registerNamespaces array)
+
+    $loader-registerNamespaces( array(
+    (...),
+    'TransBundle'                    => SYMFONY_VENDOR_PATH . '/bundles',
+    (...),
+    );
+
+AppKernel.php (in the registerBundles() function)
+    public function registerBundles() {
+        $bundles = array(
+        ...,
+        new \TransBundle\TransBundle(),
+        ...
+        );
+
+        (...)
+    }
+
+
+
 - Extract messages from LaserBundle and write to stdout
 
     `trans:update --dump-messages de DrEvil\LaserBundle`
