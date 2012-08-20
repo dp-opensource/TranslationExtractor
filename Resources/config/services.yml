@@ -1,0 +1,11 @@
+services:
+  translation.loader.po:
+    class: TransBundle\Translation\Loader\PotFileLoader
+    tags:
+      - { name: translation.loader, alias: po }
+      - { name: translation.loader, alias: pot }
+  translation.loader.mo:
+    class: TransBundle\Translation\Loader\MoFileLoader
+    tags:
+      - { name: translation.loader, alias: mo }
+
