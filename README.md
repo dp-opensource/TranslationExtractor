@@ -7,16 +7,16 @@ transbundle
 
 - Save messages to LaserBundle/Resources/translations
 
-    `bcc:trans:update --force de DrEvil\LaserBundle`
+    `trans:update --force de DrEvil\LaserBundle`
 
 - Specify the desired language
 
-    `bcc:trans:update --force en DrEvil\LaserBundle`
+    `trans:update --force en DrEvil\LaserBundle`
 
 - Set output format with `--output-format` (`yml`, `xliff`, `php`, `pot`):
 
-    `bcc:trans:update --output-format="xliff" --force en DrEvil\LaserBundle`
+    `trans:update --output-format="xliff" --force en DrEvil\LaserBundle`
 
 - Change the prefix used for newly added messages with the `--prefix` option:
 
-    `bcc:trans:update --output-format="xliff" --force --prefix='myprefix' en MyBundle`
+    `trans:update --output-format="xliff" --force --prefix='myprefix' en MyBundle`
