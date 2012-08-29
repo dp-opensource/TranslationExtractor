@@ -9,13 +9,13 @@ deps
 
     [TranslationExtractor]
     git=git@github.com:digitalpioneers/TranslationExtractor.git
-    target=vendors/TransBundle
+    target=bundles/TransBundle
 
 autoload.php (in the $loader->registerNamespaces array)
 
     $loader-registerNamespaces( array(
     (...),
-    'TransBundle'                    => SYMFONY_VENDOR_PATH . '/bundles',
+    'TransBundle'                    => __DIR__.'/.../vendor/bundles',
     (...),
     );
 
@@ -24,7 +24,7 @@ AppKernel.php (in the registerBundles() function)
     public function registerBundles() {
         $bundles = array(
         ...,
-        new \TransBundle\TransBundle(),
+        new TransBundle\TransBundle(),
         ...
         );
 
