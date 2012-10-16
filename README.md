@@ -3,8 +3,6 @@ transbundle
 
 Installation:
 
-* A github SSH Key must be installed
-
 deps
 
     [TranslationExtractor]
